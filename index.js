@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//With nested blocks of code, the block that you are in can access variables outside of that block. So the variable internal can reach out to the outer function but the outer wouldn't be able to reach in. 
 
 
 
@@ -28,9 +28,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(num) {
 
+  let sum = 0;
+
+  for(let i=0;i<=num;i++){
+    sum += i;
+  }
+  
+    return sum;
   }
  
 
